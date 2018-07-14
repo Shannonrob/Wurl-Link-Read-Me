@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-rastafari-cartoon-reggae-illustration-guitar-man-5a7f27a54f7f09.2141433915182826613256" translatesAutoresizingMaskIntoConstraints="NO" id="nod-1a-QD8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed By Wurl Link LLC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTx-5Y-BaD">
+                                <rect key="frame" x="7" y="511" width="358" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ItunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="NJs-6n-nzJ">
+                                <rect key="frame" x="9" y="45" width="357" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="Nzs-3A-t8b"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NJs-6n-nzJ" secondAttribute="trailing" constant="9" id="6Rk-gj-wFw"/>
+                            <constraint firstItem="nod-1a-QD8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AqU-HE-Afu"/>
+                            <constraint firstItem="NJs-6n-nzJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="Joi-Dg-qeh"/>
+                            <constraint firstItem="nod-1a-QD8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qu1-mC-cF3"/>
+                            <constraint firstItem="uTx-5Y-BaD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="XtM-9O-Z5K"/>
+                            <constraint firstItem="NJs-6n-nzJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="a0g-ed-7by"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uTx-5Y-BaD" secondAttribute="trailing" constant="10" id="d2d-ee-cXD"/>
+                            <constraint firstItem="nod-1a-QD8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ePX-As-wg7"/>
+                            <constraint firstItem="uTx-5Y-BaD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="491" id="kpZ-sd-co5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uTx-5Y-BaD" secondAttribute="bottom" constant="132" id="lyN-l4-fjY"/>
+                            <constraint firstItem="nod-1a-QD8" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="siL-Vk-yjD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ItunesArtwork" width="512" height="512"/>
+        <image name="kisspng-rastafari-cartoon-reggae-illustration-guitar-man-5a7f27a54f7f09.2141433915182826613256" width="1024" height="1024"/>
+    </resources>
+</document>
