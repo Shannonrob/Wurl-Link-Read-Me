@@ -7,27 +7,32 @@
 //
 
 import UIKit
-
+//                                                      LINE 26
 class CategoriesVC: UIViewController,UITableViewDataSource, UITableViewDelegate {
    
-    
+//                                                  LINE 15
     @IBOutlet weak var categoryTable: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//                                             LINE 33
         categoryTable.dataSource = self
         categoryTable.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    
+    //                                         LINE 26 #2
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataServices.instance.getCategories().count 
+        //                                      LINE 26 #3
+        return DataServices.instance.getCategories().count
     }
-    
+    //                                         LINE 26 #2
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//                                              LINE 32
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as? CategoryCell {
+//                                              LINE 32 #2
             let category = DataServices.instance.getCategories()[indexPath.row]
+            //                                  LINE 32 #3
             cell.updateViews(category: category)
             return cell
         }else{

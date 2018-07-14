@@ -9,11 +9,10 @@
 import UIKit
 //                                          LINE 63
 class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-  
+   
     
     //                                      LINE 63 #2
     @IBOutlet weak var productsCollection: UICollectionView!
-    
     
     //                                      LINE 61 #2
     private(set) public var products = [ProductInfo]()
@@ -47,5 +46,7 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         }
         return ProductCell()
     }
+    
+   
 
 }

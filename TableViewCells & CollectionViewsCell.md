@@ -10,17 +10,20 @@ Add Label if of desire - edit font to preference -> add constraints
 Add tableview ->  add constraints -> add tableView Cell -> add imageView to cell -> add constraints -> selct image -> select aspect fit (clip to bounds) -> add label and customize label -> add constraints
 Create new groups Model,View,Controller 
 Relocate VC into Controller group
-View Group -> create cocoa touch class {Class - "CategoryCell", Subclass "UiTableViewCell"}  -> add iboulets  (go to table view cell) change the Custom class to "CategoryCell" connect iboulets
-Go to VC -> add iboulet of UITableView! -> connect "main project name" to tablebleView 
+View Group -> create cocoa touch class {Class - "CategoryCell", Subclass "UiTableViewCell"}  -> add iboulets for labels etc 
+StoryBoard -> change table view cell  Custom class to "CategoryCell" connect iboulets
+Go to VC -> add iboulet of UITableView! 
+StoryBoard -> connect VC iboulet to tablebleView 
+
 /// passing data
-Create Model file -> Swift file {Save as - Category} -> create struct "name of struct'" 
-... create variables and array of categories ->  create initializer
+Create Model file -> Swift file {Save as - Category} -> create struct "name of struct'" ->  create variables  of category ->  create initializer 
+
 
 ###Create a service (store data)###
 Create a group -> create a swift file {DataService} -> make a class  -> create a singleton "instance"" -> create a func to feed the app from server -> create data source
 
 ####Feed VC with date### 
-Add Protocols -> protocol stubs
+VC -> Add tableViews Protocols -> protocol stubs -> add number of row count
 
 #### Go to View Group-> Cell file#### 
 Create a function "updating the views on the cell and pass in the categories"
@@ -30,7 +33,7 @@ implement the function just created -> grab the category from the category array
 set dataSource and delegate in View did load
 
 ### Go to storyboard
-Set reuseable cell indentifier  -> category cell -> atributes  -> identifier
+Set  cell reuseable indentifier  -> category cell -> atributes  -> identifier
 
 ### Remove lines located between the cells
 Select tableview -> attributes inspector -> {seperator} change to none -> uncheck scroll indicator

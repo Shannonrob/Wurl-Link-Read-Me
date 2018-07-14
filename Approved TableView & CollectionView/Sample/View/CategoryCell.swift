@@ -9,10 +9,10 @@
 import UIKit
 
 class CategoryCell: UITableViewCell {
-
+//                                                  LINE 13
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryTitle: UILabel!
-    
+    //                                              LINE 29
     func updateViews (category: Category) {
         categoryImage.image = UIImage(named: category.imageName)
         categoryTitle.text = category.title

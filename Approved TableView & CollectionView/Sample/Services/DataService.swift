@@ -7,10 +7,11 @@
 //
 
 import Foundation
+//                                  LINE 23 #3
 class DataServices {
-    
+    //                              LINE 23 #4
     static let instance = DataServices()
-    
+    //                              LINE 23 #6
     private let categories = [
     Category(title: "GROCERIES", imageName: "File1.png"),
     Category(title: "RECIPES", imageName: "File2.png"),
@@ -45,8 +46,7 @@ class DataServices {
     private let blingest = [ProductInfo]()
     
     
-    
-    
+    //                                          LINE 23 #5
     func getCategories() -> [Category]{
         return categories
     }
